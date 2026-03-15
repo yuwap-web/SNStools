@@ -1,0 +1,102 @@
+.settings {
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.settings-header {
+  margin-bottom: 32px;
+}
+
+.settings-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+}
+
+.settings-header .description {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #eee;
+}
+
+.tab {
+  padding: 12px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  color: #1DA1F2;
+}
+
+.tab.active {
+  color: #1DA1F2;
+  border-bottom-color: #1DA1F2;
+}
+
+.tab-content {
+  margin-bottom: 32px;
+}
+
+.api-instructions {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 24px;
+}
+
+.api-instructions h3 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.instructions {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.instructions ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+}
+
+.instructions a {
+  color: #1DA1F2;
+  text-decoration: none;
+}
+
+.instructions a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .settings {
+    padding: 16px;
+  }
+
+  .settings-header h1 {
+    font-size: 20px;
+  }
+}

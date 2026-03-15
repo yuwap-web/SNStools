@@ -1,0 +1,110 @@
+.account-card {
+  background: white;
+  border-left: 4px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.account-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.platform-icon {
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.platform-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-content {
+  margin-bottom: 12px;
+}
+
+.account-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.followers-info {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.followers-label {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.followers-count {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1DA1F2;
+}
+
+.posts-toggle-btn {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 12px 0;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.posts-toggle-btn:hover {
+  background: #e0e0e0;
+}
+
+.posts-section {
+  margin: 12px 0;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+.card-footer {
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  color: #999;
+}
+
+.last-updated {
+  display: block;
+}
